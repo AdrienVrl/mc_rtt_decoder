@@ -1,0 +1,15 @@
+# Python 3.12 (official python.org build: its signed launcher is not blocked by Smart App Control).
+# Install in two steps (nlb_tools pins pandas<=1.3.4, which does not support 3.12):
+#   uv pip install -r requirements.txt
+#   uv pip install --no-deps nlb_tools
+pandas==2.2.3
+numpy==1.26.4
+scipy
+h5py
+pynwb
+matplotlib
+scikit-learn
+jupyterlab
+ipykernel
+# Day 4 (GRU), CPU build, installed separately:
+#   uv pip install torch --index-url https://download.pytorch.org/whl/cpu

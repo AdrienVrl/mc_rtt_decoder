@@ -1,0 +1,35 @@
+{
+  "dataset": "MC_RTT (DANDI 000129), train file, test = last 20% of the session",
+  "bin_ms": 20,
+  "lag_bins": 6,
+  "n_units": 130,
+  "state_dim": 4,
+  "state_layout": [
+    "pos_x",
+    "pos_y",
+    "vel_x",
+    "vel_y"
+  ],
+  "n_test_bins": 6490,
+  "recurrence": "x_0 = 0; x_t = M x_{t-1} + K y_t + b; v_t = x_t[d-2:d] + v_offset",
+  "spectral_radius_M": 0.9546186280874547,
+  "python_test_r2": {
+    "x": 0.4238045842400232,
+    "y": 0.35233402250160695,
+    "mean": 0.3880693033708151
+  },
+  "check_folded_vs_predict_max_abs_diff": 2.2737367544323206e-13,
+  "ranges": {
+    "state_max_abs_train": 262.6734380743448,
+    "state_max_abs_train_per_dim": [
+      99.76749400115601,
+      87.9733695989911,
+      262.6734380743448,
+      201.59885819789778
+    ],
+    "M_max_abs": 0.9827509865017744,
+    "K_max_abs": 14.941454686899174,
+    "b_max_abs": 1.3015186334323585,
+    "counts_max_train": 3
+  }
+}
